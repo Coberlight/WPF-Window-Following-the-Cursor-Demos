@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_MovingWindow", "WpfApp_MovingWindow\WpfApp_MovingWindow.csproj", "{0E365A78-F323-4C37-95C4-ADBBBBDAA8A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_MovingWindow_AsyncAwait", "WpfApp_MovingWindow_AsyncAwait\WpfApp_MovingWindow_AsyncAwait.csproj", "{7A02CA44-9181-4A73-AAA5-ADE3DEEB2662}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_MovingWindow_Timers", "WpfApp_MovingWindow_Timers\WpfApp_MovingWindow_Timers.csproj", "{C11D1687-142A-498A-97E4-529EC0E89098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_MovingWindow_WinFormsTimers", "WpfApp_MovingWindow_WinFormsTimers\WpfApp_MovingWindow_WinFormsTimers.csproj", "{65ED0AF4-AF2C-4992-B45C-41F355D6C66C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_MovingWindow_AsyncAwait_EldHasp", "WpfApp_MovingWindow_AsyncAwait_EldHasp\WpfApp_MovingWindow_AsyncAwait_EldHasp.csproj", "{68B7BACD-8695-4F49-AC72-3D29D9D3FBD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E365A78-F323-4C37-95C4-ADBBBBDAA8A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E365A78-F323-4C37-95C4-ADBBBBDAA8A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E365A78-F323-4C37-95C4-ADBBBBDAA8A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E365A78-F323-4C37-95C4-ADBBBBDAA8A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A02CA44-9181-4A73-AAA5-ADE3DEEB2662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A02CA44-9181-4A73-AAA5-ADE3DEEB2662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A02CA44-9181-4A73-AAA5-ADE3DEEB2662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A02CA44-9181-4A73-AAA5-ADE3DEEB2662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C11D1687-142A-498A-97E4-529EC0E89098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C11D1687-142A-498A-97E4-529EC0E89098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C11D1687-142A-498A-97E4-529EC0E89098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C11D1687-142A-498A-97E4-529EC0E89098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65ED0AF4-AF2C-4992-B45C-41F355D6C66C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65ED0AF4-AF2C-4992-B45C-41F355D6C66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65ED0AF4-AF2C-4992-B45C-41F355D6C66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65ED0AF4-AF2C-4992-B45C-41F355D6C66C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B7BACD-8695-4F49-AC72-3D29D9D3FBD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B7BACD-8695-4F49-AC72-3D29D9D3FBD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B7BACD-8695-4F49-AC72-3D29D9D3FBD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B7BACD-8695-4F49-AC72-3D29D9D3FBD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F3C363D-6B4B-40A4-8747-3E4B5CA8B730}
+	EndGlobalSection
+EndGlobal

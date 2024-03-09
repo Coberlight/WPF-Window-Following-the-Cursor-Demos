@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp_MovingWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_MovingWindow"
+        mc:Ignorable="d"
+        Title="Moving Window Demo (System.Threading.Thread)" Height="300" Width="550"
+        Loaded="Window_Loaded" MouseMove="Window_MouseMove"
+        >
+    <Grid>
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="label_Status" Content="Status: "/>
+                <Label x:Name="label_WindowInfo" Content="WindowX: " Grid.Column="1"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <Button x:Name="button_Start" Height="30" Content="Start" Click="button_Start_Click"/>
+                <Button x:Name="button_Stop" Content="Stop" Click="button_Stop_Click" Grid.Column="1"/>
+                <Button x:Name="button_ShowFPS" Content="Show FPS" Click="button_ShowFPS_Click" Grid.Column="2"/>
+                <Button x:Name="button_GeneralExit" Content="General exit" Click="button_GeneralExit_Click"  Grid.Column="3"/>
+            </Grid>
+            <CheckBox x:Name="checkBox_DebugEnabled" Content="Debug" Height="20" VerticalContentAlignment="Center" Checked="CheckBox_Checked"/>
+            <DockPanel x:Name="dockPanel" Height="75" Background="#AAAAAA" MouseDown="DockPanel_MouseDown">
+                <Label Content="Drag and drop source" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+            </DockPanel>
+            <TextBox AcceptsReturn="True" AcceptsTab="True" Height="75" TextWrapping="Wrap" >
+
+            </TextBox>
+        </StackPanel>
+    </Grid>
+</Window>
