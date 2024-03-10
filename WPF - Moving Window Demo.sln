@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_MovingWindow_WinForm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_MovingWindow_AsyncAwait_EldHasp", "WpfApp_MovingWindow_AsyncAwait_EldHasp\WpfApp_MovingWindow_AsyncAwait_EldHasp.csproj", "{68B7BACD-8695-4F49-AC72-3D29D9D3FBD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walker", "Walker\Walker.csproj", "{2175641F-A3C4-404C-9F68-BF32C0AD25EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walker - Smooth", "Walker - Smooth\Walker - Smooth.csproj", "{4D98CD88-C9EA-4C90-9B1A-F944C1A7E110}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{68B7BACD-8695-4F49-AC72-3D29D9D3FBD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68B7BACD-8695-4F49-AC72-3D29D9D3FBD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68B7BACD-8695-4F49-AC72-3D29D9D3FBD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2175641F-A3C4-404C-9F68-BF32C0AD25EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2175641F-A3C4-404C-9F68-BF32C0AD25EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2175641F-A3C4-404C-9F68-BF32C0AD25EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2175641F-A3C4-404C-9F68-BF32C0AD25EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D98CD88-C9EA-4C90-9B1A-F944C1A7E110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D98CD88-C9EA-4C90-9B1A-F944C1A7E110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D98CD88-C9EA-4C90-9B1A-F944C1A7E110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D98CD88-C9EA-4C90-9B1A-F944C1A7E110}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
