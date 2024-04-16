@@ -1,0 +1,19 @@
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\bin\Debug\images\2.png
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\bin\Debug\images\1.png
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\bin\Debug\Walker.exe.config
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\bin\Debug\Walker.exe
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\bin\Debug\Walker.pdb
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\Walker - Smooth.csproj.AssemblyReference.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\Walker - Smooth.csproj.SuggestedBindingRedirects.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\MainWindow.g.cs
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\App.g.cs
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\Walker_Content.g.cs
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\Walker_MarkupCompile.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\Walker_MarkupCompile.lref
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\MainWindow.baml
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\Walker.g.resources
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\Walker.Properties.Resources.resources
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\Walker - Smooth.csproj.GenerateResource.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\Walker - Smooth.csproj.CoreCompileInputs.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\Walker.exe
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\Walker - Smooth\obj\Debug\Walker.pdb

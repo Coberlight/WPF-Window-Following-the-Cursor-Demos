@@ -1,0 +1,16 @@
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\bin\Debug\MovingPopup.exe.config
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\bin\Debug\MovingPopup.exe
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\bin\Debug\MovingPopup.pdb
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\obj\Debug\MovingPopup.csproj.AssemblyReference.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\obj\Debug\MovingPopup.csproj.SuggestedBindingRedirects.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\obj\Debug\MainWindow.g.cs
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\obj\Debug\App.g.cs
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\obj\Debug\MovingPopup_MarkupCompile.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\obj\Debug\MovingPopup_MarkupCompile.lref
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\obj\Debug\MainWindow.baml
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\obj\Debug\MovingPopup.g.resources
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\obj\Debug\MovingPopup.Properties.Resources.resources
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\obj\Debug\MovingPopup.csproj.GenerateResource.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\obj\Debug\MovingPopup.csproj.CoreCompileInputs.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\obj\Debug\MovingPopup.exe
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\MovingPopup\obj\Debug\MovingPopup.pdb

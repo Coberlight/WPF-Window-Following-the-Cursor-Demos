@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walker", "Walker\Walker.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walker - Smooth", "Walker - Smooth\Walker - Smooth.csproj", "{4D98CD88-C9EA-4C90-9B1A-F944C1A7E110}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_MovingWindow_AsyncAwait_NonLowLevelMouseScanning", "WpfApp_MovingWindow_AsyncAwait_NonLowLevelMouseScanning\WpfApp_MovingWindow_AsyncAwait_NonLowLevelMouseScanning.csproj", "{1433E96D-DB1E-4643-B036-6749D18208C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingPopup", "MovingPopup\MovingPopup.csproj", "{D78DC418-3D72-4242-85FD-43417D9F8B9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{4D98CD88-C9EA-4C90-9B1A-F944C1A7E110}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D98CD88-C9EA-4C90-9B1A-F944C1A7E110}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D98CD88-C9EA-4C90-9B1A-F944C1A7E110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1433E96D-DB1E-4643-B036-6749D18208C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1433E96D-DB1E-4643-B036-6749D18208C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1433E96D-DB1E-4643-B036-6749D18208C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1433E96D-DB1E-4643-B036-6749D18208C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78DC418-3D72-4242-85FD-43417D9F8B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78DC418-3D72-4242-85FD-43417D9F8B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78DC418-3D72-4242-85FD-43417D9F8B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78DC418-3D72-4242-85FD-43417D9F8B9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
