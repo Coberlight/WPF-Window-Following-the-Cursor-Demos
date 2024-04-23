@@ -60,8 +60,6 @@ namespace GiveFeedbackTest
 
             myPopupText.Text = System.IO.Path.GetFileNameWithoutExtension(filename);
 
-            
-
             Task.Run(() =>
             {
                 try
@@ -75,6 +73,7 @@ namespace GiveFeedbackTest
                 }
                 catch (System.Threading.Tasks.TaskCanceledException) { }
             });
+            TransformFactors = PresentationSource.FromVisual(this).CompositionTarget.TransformToDevice;
 
             hsa = new HintSmoothAnimation();
             Point mousePos = CursorHelper.GetCursorPosition();
@@ -95,19 +94,21 @@ namespace GiveFeedbackTest
             e.UseDefaultCursors = true; // При false можно устанавливать свои курсоры с помощью Mouse.SetCursor(Cursors.ТипКурсора);
             e.Handled = true;
         }
-
+        private Matrix TransformFactors;
         private void MovePopup()
         {
             Point mousePos = CursorHelper.GetCursorPosition();
+                
             if (hsa != null)
             {
-                Point targetPoint = hsa.FollowPoint(mousePos);
-                myPopup2.HorizontalOffset = targetPoint.X - myPopup2.Width / 2;
-                myPopup2.VerticalOffset = targetPoint.Y + 100;
-                //double[] targetPoint = hsa.FollowPoint(mousePos);
-                //myPopup2.HorizontalOffset = targetPoint[0];
-                //myPopup2.VerticalOffset = targetPoint[1] + 100;
+                Point targetPoint = hsa.GetFollowingAnimationFrame(mousePos);
+                SetPopupCoordinates(targetPoint.X - myPopup2.Width / 2, targetPoint.Y + 100, TransformFactors.M11, TransformFactors.M22);
             }
+        }
+        private void SetPopupCoordinates(double x, double y, double dpiX, double dpiY)
+        {
+            myPopup2.HorizontalOffset = x / dpiX;
+            myPopup2.VerticalOffset = y / dpiY;
         }
     }
 }
