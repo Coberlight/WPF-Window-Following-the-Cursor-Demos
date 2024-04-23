@@ -20,7 +20,7 @@
     <Grid>
         <StackPanel>
             <TextBox x:Name="TextBox_DroppableElementName" Text="D:\MainData\Desktop\audio_2024-04-21_23-03-14.ogg" FontSize="20"/>
-            <TextBlock Text="Drag and drop source" Background="DarkBlue" Foreground="White" Height="40" GiveFeedback="TextBlock_GiveFeedback" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
+            <TextBlock Text="Drag and drop source" Background="DarkBlue" Foreground="White" Height="40" GiveFeedback="TextBlock_GiveFeedback" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" MouseMove="TextBlock_MouseMove"/>
         </StackPanel>
         <Popup Name="myPopup2" Width="{Binding ElementName=myPopupText, Path=ActualWidth}" IsOpen="False" Opacity="0" Style="{StaticResource PopupStyle1}">
 

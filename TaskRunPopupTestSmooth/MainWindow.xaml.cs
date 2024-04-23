@@ -38,6 +38,21 @@ namespace GiveFeedbackTest
 
         private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            //ProcessDragAndDropAnimation();
+        }
+        private void TextBlock_MouseMove(object sender, MouseEventArgs e)
+        {
+            // При нажатой ЛКМ и сдвигу указателя мыши начинается перетаскивание.
+            // Дополнительно проверяем правую кнопку мыши, так как она используется для отмены. 
+            // Без проверки начинается резкое мерцание окна с постоянным возникновением и отменой событий Drag and drop.
+            if (Mouse.LeftButton == MouseButtonState.Pressed && Mouse.RightButton == MouseButtonState.Released) 
+            {
+                ProcessDragAndDropWithAnimation();
+            }
+        }
+
+        private void ProcessDragAndDropWithAnimation()
+        {
             string filename = TextBox_DroppableElementName.Text.Trim('\"');
             if (!File.Exists(filename)) return;
             FileInfo fileInfo = new FileInfo(filename);
@@ -110,5 +125,7 @@ namespace GiveFeedbackTest
             myPopup2.HorizontalOffset = x / dpiX;
             myPopup2.VerticalOffset = y / dpiY;
         }
+
+        
     }
 }
