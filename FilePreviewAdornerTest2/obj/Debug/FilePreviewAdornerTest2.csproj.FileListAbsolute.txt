@@ -1,0 +1,16 @@
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\bin\Debug\FilePreviewAdornerTest2.exe.config
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\bin\Debug\FilePreviewAdornerTest2.exe
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\bin\Debug\FilePreviewAdornerTest2.pdb
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\obj\Debug\FilePreviewAdornerTest2.csproj.AssemblyReference.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\obj\Debug\FilePreviewAdornerTest2.csproj.SuggestedBindingRedirects.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\obj\Debug\MainWindow.g.cs
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\obj\Debug\App.g.cs
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\obj\Debug\FilePreviewAdornerTest2_MarkupCompile.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\obj\Debug\FilePreviewAdornerTest2_MarkupCompile.lref
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\obj\Debug\MainWindow.baml
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\obj\Debug\FilePreviewAdornerTest2.g.resources
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\obj\Debug\FilePreviewAdornerTest2.Properties.Resources.resources
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\obj\Debug\FilePreviewAdornerTest2.csproj.GenerateResource.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\obj\Debug\FilePreviewAdornerTest2.csproj.CoreCompileInputs.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\obj\Debug\FilePreviewAdornerTest2.exe
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\FilePreviewAdornerTest2\obj\Debug\FilePreviewAdornerTest2.pdb

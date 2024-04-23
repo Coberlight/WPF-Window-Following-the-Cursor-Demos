@@ -21,6 +21,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_MovingWindow_AsyncAw
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingPopup", "MovingPopup\MovingPopup.csproj", "{D78DC418-3D72-4242-85FD-43417D9F8B9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilePreviewAdornerTest", "FilePreviewAdornerTest\FilePreviewAdornerTest.csproj", "{97021D44-EA7F-4BCE-99A8-F6D54F4AC9B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilePreviewAdornerTest2", "FilePreviewAdornerTest2\FilePreviewAdornerTest2.csproj", "{8DD2066C-D078-49D8-A73A-2A5C7CF234D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiveFeedbackTest", "GiveFeedbackTest\GiveFeedbackTest.csproj", "{4A9F0193-B469-4407-A58D-8C896D12011C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskRunPopupTest", "TaskRunPopupTest\TaskRunPopupTest.csproj", "{25CD564C-8F39-4AFD-A976-6EEB9C77358D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskRunPopupTest2", "TaskRunPopupTest2\TaskRunPopupTest2.csproj", "{B59DF629-AC50-41CD-960E-C8D64B82EE7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskRunPopupTestSmooth", "TaskRunPopupTestSmooth\TaskRunPopupTestSmooth.csproj", "{839323E0-AAAD-4D40-8C1A-4710A84DF0A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +75,30 @@ Global
 		{D78DC418-3D72-4242-85FD-43417D9F8B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D78DC418-3D72-4242-85FD-43417D9F8B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D78DC418-3D72-4242-85FD-43417D9F8B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97021D44-EA7F-4BCE-99A8-F6D54F4AC9B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97021D44-EA7F-4BCE-99A8-F6D54F4AC9B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97021D44-EA7F-4BCE-99A8-F6D54F4AC9B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97021D44-EA7F-4BCE-99A8-F6D54F4AC9B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DD2066C-D078-49D8-A73A-2A5C7CF234D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DD2066C-D078-49D8-A73A-2A5C7CF234D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DD2066C-D078-49D8-A73A-2A5C7CF234D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DD2066C-D078-49D8-A73A-2A5C7CF234D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A9F0193-B469-4407-A58D-8C896D12011C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A9F0193-B469-4407-A58D-8C896D12011C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A9F0193-B469-4407-A58D-8C896D12011C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A9F0193-B469-4407-A58D-8C896D12011C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25CD564C-8F39-4AFD-A976-6EEB9C77358D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25CD564C-8F39-4AFD-A976-6EEB9C77358D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25CD564C-8F39-4AFD-A976-6EEB9C77358D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25CD564C-8F39-4AFD-A976-6EEB9C77358D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B59DF629-AC50-41CD-960E-C8D64B82EE7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B59DF629-AC50-41CD-960E-C8D64B82EE7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B59DF629-AC50-41CD-960E-C8D64B82EE7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B59DF629-AC50-41CD-960E-C8D64B82EE7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{839323E0-AAAD-4D40-8C1A-4710A84DF0A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839323E0-AAAD-4D40-8C1A-4710A84DF0A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839323E0-AAAD-4D40-8C1A-4710A84DF0A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839323E0-AAAD-4D40-8C1A-4710A84DF0A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

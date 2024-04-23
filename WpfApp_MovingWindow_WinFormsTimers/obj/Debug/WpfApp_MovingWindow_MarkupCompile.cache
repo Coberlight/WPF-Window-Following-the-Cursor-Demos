@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\BicycleFactory\Visual Studio (dotNET)\YetAnotherPluginPicker\WpfApp_MovingWindow_Timers\obj\Debug\
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\WpfApp_MovingWindow_WinFormsTimers\obj\Debug\
 WpfApp_MovingWindow
 none
 false
 DEBUG;TRACE
-D:\BicycleFactory\Visual Studio (dotNET)\YetAnotherPluginPicker\WpfApp_MovingWindow_Timers\App.xaml
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\WpfApp_MovingWindow_WinFormsTimers\App.xaml
 2-1900060663
 
-9-1138486186
+101074392492
 14-2011955616
 MainWindow.xaml;MovingWindow.xaml;
 
-False
+True
 

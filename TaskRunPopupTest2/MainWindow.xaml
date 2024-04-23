@@ -1,0 +1,22 @@
+﻿<Window x:Class="GiveFeedbackTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GiveFeedbackTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="TextBox_DroppableElementName" Text="D:\MainData\Desktop\Sytrus.fst" FontSize="20"/>
+            <TextBlock Text="Drag and drop source" Background="DarkBlue" Foreground="White" Height="40" GiveFeedback="TextBlock_GiveFeedback" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
+        </StackPanel>
+        <Popup Name="myPopup2" IsOpen="False" >
+            <Border BorderThickness="1">
+                <TextBlock Name="myPopupText" Background="LightBlue" Foreground="Blue" Padding="30">
+                Popup Text
+                </TextBlock>
+            </Border>
+        </Popup>
+    </Grid>
+</Window>
