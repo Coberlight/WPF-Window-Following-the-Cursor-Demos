@@ -15,6 +15,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
+using System.Runtime.InteropServices;
+using System.Windows.Interop;
+using System.Windows.Controls.Primitives;
+//using Windows.Foundation;
 
 namespace GiveFeedbackTest
 {
@@ -28,7 +32,9 @@ namespace GiveFeedbackTest
         public MainWindow()
         {
             InitializeComponent();
+
             GiveFeedback += OnGiveFeedback;
+            hsa = new HintSmoothAnimation();
         }
 
         private void TextBlock_GiveFeedback(object sender, GiveFeedbackEventArgs e)
@@ -53,28 +59,44 @@ namespace GiveFeedbackTest
 
         private void ProcessDragAndDropWithAnimation()
         {
+            // Подготовка строки перед созданием объекта FileInfo
             string filename = TextBox_DroppableElementName.Text.Trim('\"');
             if (!File.Exists(filename)) return;
+
+            // Создание FileInfo и подготовка данных для перетаскивания
             FileInfo fileInfo = new FileInfo(filename);
             string[] files = { fileInfo.FullName };
             var data = new DataObject(DataFormats.FileDrop, files);
             data.SetData(DataFormats.Text, files[0]);
-
+            
+            // Показать всплывающее окно, установить флажок перетаскивания, настроить свойства
             if (myPopup2.IsOpen == false) myPopup2.IsOpen = true;
-
-            // Эти методы не сработали в попытке ускорить появление всплывающего меню после начала перетаскивания
-            //myPopup2.BeginInit();
-            //myPopup2.EndInit();
-            //myPopup2.BringIntoView();
-            //myPopup2.Focus();
-            //myPopup2.UpdateDefaultStyle();
-            //myPopup2.UpdateLayout();
-
             isMoving = true;
             myPopup2.Placement = System.Windows.Controls.Primitives.PlacementMode.Absolute;
-
             myPopupText.Text = System.IO.Path.GetFileNameWithoutExtension(filename);
 
+            // Установка прозрачности
+            //IntPtr hWnd = ((System.Windows.Interop.HwndSource)PresentationSource.FromVisual(myPopup2)).Handle;
+            //int windowLong = GetWindowLong(hWnd, -20); // -20 = GWL_EXSTYLE
+            //windowLong |= 0x80; // 0x80 = WS_EX_TRANSPARENT
+            ////SetWindowLong(hWnd, -20, windowLong);
+            //IntPtr hWnd = ((System.Windows.Interop.HwndSource)PresentationSource.FromVisual(myPopup2)).Handle;
+            IntPtr hwnd = new WindowInteropHelper(this).Handle;
+            WindowsServices.SetWindowExTransparent(hwnd);
+
+            // Получение и назначение картинок
+            string[] picturePaths = GetAssociatedPictureFilesPaths(filename);
+            if (picturePaths.Length > 0)
+            {
+                myPopupImage.Visibility = Visibility.Visible;
+                Uri pictureUri = new Uri(picturePaths[0]);
+                myPopupImage.Source = new BitmapImage(pictureUri);
+            } else
+            {
+                myPopupImage.Visibility = Visibility.Hidden;
+            }
+
+            // Запуск таски с перетаскиванием (дополнительно к GiveFeedback)
             Task.Run(() =>
             {
                 try
@@ -90,18 +112,46 @@ namespace GiveFeedbackTest
             });
             TransformFactors = PresentationSource.FromVisual(this).CompositionTarget.TransformToDevice;
 
-            hsa = new HintSmoothAnimation();
+            // Получить позицию указателя мыши и инициализировать анимацию
             Point mousePos = CursorHelper.GetCursorPosition();
-            hsa.Init(mousePos.X, mousePos.Y, 0.13);
+
+            // Получение размеров надписи
+            Rect startPointerRect = myPopupText.ContentStart.GetCharacterRect(LogicalDirection.Backward);
+            Rect endPointerRect = myPopupText.ContentEnd.GetCharacterRect(LogicalDirection.Forward);
+            Rect textRect = Rect.Union(startPointerRect, endPointerRect);
+
+            // Установка ширины попапа
+            PopupStackPanel.Width = PopupStackPanel.MaxWidth;
+            double mainWidth;
+            if (textRect.Width > myPopupImage.ActualWidth) {
+                mainWidth = textRect.Width;
+            } else {
+                mainWidth = myPopupImage.ActualWidth;
+            }
+            PopupStackPanel.Width = mainWidth;
+            myPopup2.Width = mainWidth;
+
+            hsa.Init(mousePos.X, mousePos.Y, -mainWidth / 4, 30, 0.13);
             this.Hide();
 
+            // Вызов перетаскивания (метод вызывает прерывание)
             DragDrop.DoDragDrop(this, data, DragDropEffects.Copy);
 
+            //MessageBox.Show("myPopupImage.ActualWidth = " + myPopupImage.ActualWidth + "\ntextRect w " + textRect.Width + "\n textRect h " + textRect.Height);
+
+            // Установка непрозрачности
+            WindowsServices.SetWindowExTransparent(hwnd);
+
+            // Скрытие попапа, показывание окна
             myPopup2.IsOpen = false;
-            hsa = null;
             this.Show();
             this.Focus();
         }
+        [DllImport("user32.dll")]
+        private static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
+
+        [DllImport("user32.dll")]
+        private static extern int GetWindowLong(IntPtr hWnd, int nIndex);
 
         private void OnGiveFeedback(object sender, GiveFeedbackEventArgs e)
         {
@@ -113,11 +163,12 @@ namespace GiveFeedbackTest
         private void MovePopup()
         {
             Point mousePos = CursorHelper.GetCursorPosition();
-                
+            
             if (hsa != null)
             {
                 Point targetPoint = hsa.GetFollowingAnimationFrame(mousePos);
-                SetPopupCoordinates(targetPoint.X - myPopup2.Width / 2, targetPoint.Y + 100, TransformFactors.M11, TransformFactors.M22);
+                SetPopupCoordinates(targetPoint.X, targetPoint.Y, TransformFactors.M11, TransformFactors.M22);
+                //SetPopupCoordinatesLowLevel(targetPoint.X - myPopup2.Width / 2, targetPoint.Y + 100);
             }
         }
         private void SetPopupCoordinates(double x, double y, double dpiX, double dpiY)
@@ -125,7 +176,61 @@ namespace GiveFeedbackTest
             myPopup2.HorizontalOffset = x / dpiX;
             myPopup2.VerticalOffset = y / dpiY;
         }
+        //[DllImport("user32.dll", SetLastError = true)]
+        //internal static extern bool MoveWindow(IntPtr hWnd, int X, int Y, int nWidth, int nHeight, bool bRepaint);
+        //[DllImport("user32.dll")]
+        //[return: MarshalAs(UnmanagedType.Bool)]
+        //private static extern bool GetWindowRect(IntPtr hWnd, out RECT lpRect);
+        //private void SetPopupCoordinatesLowLevel(double x, double y)
+        //{
+        //    if (isMoving)
+        //    {
+        //        return;
+        //    }
+        //    isMoving = true;
+        //    try
+        //    {
+        //        if (myPopup2 == null)
+        //            return;
 
-        
+        //        var hwndSource = (PresentationSource.FromVisual(myPopup2)) as HwndSource;
+
+        //        if (hwndSource == null)
+        //            return;
+        //        var hwnd = hwndSource.Handle;
+
+        //        RECT rect;
+
+        //        if (!GetWindowRect(hwnd, out rect))
+        //            return;
+
+        //        MoveWindow(hwnd, rect.Left + (int)x, rect.Top + (int)y, (int)Width, (int)Height, true);
+        //    }
+        //    finally
+        //    {
+        //        isMoving = false;
+        //    }
+        //}
+
+        public static string[] GetAssociatedPictureFilesPaths(string path)
+        {
+            string[] formats = new string[5] { ".png", ".jpeg", ".jpg", ".bmp", ".gif" };
+            List<string> picturePaths = new List<string>();
+            string picturePath = null;
+
+            string elementDestinationBasePart = System.IO.Path.Combine(
+                System.IO.Path.GetDirectoryName(path),
+                System.IO.Path.GetFileNameWithoutExtension(path));
+
+            for (int i = 0; i < formats.Length; i++)
+            {
+                picturePath = elementDestinationBasePart + formats[i];
+                if (File.Exists(picturePath))
+                {
+                    picturePaths.Add(picturePath);
+                }
+            }
+            return picturePaths.ToArray();
+        }
     }
 }

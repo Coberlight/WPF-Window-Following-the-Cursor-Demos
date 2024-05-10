@@ -19,17 +19,28 @@
 
     <Grid>
         <StackPanel>
-            <TextBox x:Name="TextBox_DroppableElementName" Text="D:\MainData\Desktop\audio_2024-04-21_23-03-14.ogg" FontSize="20"/>
+            <TextBox x:Name="TextBox_DroppableElementName" Text="D:\MainData\Images\memes\0fps.png" FontSize="20"/>
             <TextBlock Text="Drag and drop source" Background="DarkBlue" Foreground="White" Height="40" GiveFeedback="TextBlock_GiveFeedback" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" MouseMove="TextBlock_MouseMove"/>
         </StackPanel>
-        <Popup Name="myPopup2" Width="{Binding ElementName=myPopupText, Path=ActualWidth}" IsOpen="False" Opacity="0" Style="{StaticResource PopupStyle1}">
 
-            <Border BorderThickness="1">
+        <!--{Binding ElementName=PopupStackPanel, Path=ActualWidth} - этот вариант не работает, потому что ширина StackPanel автоматически подстраивается под внешний контейнер. Его ширина 0, значит ширина StackPanel тоже 0-->
+        <Popup Name="myPopup2" MinWidth="40" 
+               Width="{Binding ElementName=PopupStackPanel, Path=MaxWidth}" 
+               Style="{StaticResource PopupStyle1}" 
+               IsHitTestVisible="False"  
+               AllowsTransparency="True"
+               Placement="AbsolutePoint">
+            <!--<Border BorderThickness="1">
                 <TextBlock Name="myPopupText" Background="LightBlue" Foreground="Blue" Padding="30">
                 Popup Text
                 </TextBlock>
-            </Border>
-            
+            </Border>-->
+            <StackPanel x:Name="PopupStackPanel" MaxWidth="160">
+                <Image Name="myPopupImage" MaxHeight="100"></Image>
+                <TextBlock Name="myPopupText" Background="Transparent" TextAlignment="Center" TextWrapping="Wrap" Foreground="Blue" Padding="10,0,10,0">
+                        Popup Text
+                </TextBlock>
+            </StackPanel>
         </Popup>
     </Grid>
 </Window>

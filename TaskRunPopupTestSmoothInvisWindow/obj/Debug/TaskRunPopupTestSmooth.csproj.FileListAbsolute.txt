@@ -1,0 +1,16 @@
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\bin\Debug\GiveFeedbackTest.exe.config
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\bin\Debug\GiveFeedbackTest.exe
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\bin\Debug\GiveFeedbackTest.pdb
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\obj\Debug\TaskRunPopupTestSmooth.csproj.AssemblyReference.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\obj\Debug\TaskRunPopupTestSmooth.csproj.SuggestedBindingRedirects.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\obj\Debug\MainWindow.g.cs
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\obj\Debug\App.g.cs
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\obj\Debug\GiveFeedbackTest_MarkupCompile.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\obj\Debug\GiveFeedbackTest_MarkupCompile.lref
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\obj\Debug\MainWindow.baml
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\obj\Debug\GiveFeedbackTest.g.resources
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\obj\Debug\GiveFeedbackTest.Properties.Resources.resources
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\obj\Debug\TaskRunPopupTestSmooth.csproj.GenerateResource.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\obj\Debug\TaskRunPopupTestSmooth.csproj.CoreCompileInputs.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\obj\Debug\GiveFeedbackTest.exe
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunPopupTestSmooth\obj\Debug\GiveFeedbackTest.pdb

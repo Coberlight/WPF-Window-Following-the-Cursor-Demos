@@ -14,7 +14,7 @@
         Background="#00FFFFFF"
         >
     <Grid>
-        <Image Source="/image.png" Margin="20">
+        <Image Source="/normal difficulty boblox.png" Margin="20">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/очкарик 64 64.png"/>
             </Image.OpacityMask>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="ToolTips.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToolTips"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <Button Height="30">Some Button 1
+                <Button.ToolTip>
+                    <ToolTip IsHitTestVisible="False" >
+                        Aboba
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button Height="100" Click="Button_Click">Some Button 2
+            </Button>
+            <StackPanel Grid.Row="1">
+                <TextBlock Background="Green">Some text some text some text</TextBlock>
+                <Label Content="aboba"/>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</Window>

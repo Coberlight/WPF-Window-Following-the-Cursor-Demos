@@ -32,7 +32,7 @@ namespace Walker
 				Point screen = elem.PointToScreen ( pos );
 				tb.Text = $"{screen.X}:{screen.Y}";
 				pop.HorizontalOffset = screen.X- (pop.Child as FrameworkElement).ActualWidth / 2;
-				pop.VerticalOffset = screen.Y;
+				pop.VerticalOffset = screen.Y - (pop.Child as FrameworkElement).ActualHeight / 2;
 				if ( !pop.IsOpen )
 					pop.IsOpen = true;
 			}

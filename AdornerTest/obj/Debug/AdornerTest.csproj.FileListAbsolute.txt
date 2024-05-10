@@ -1,0 +1,16 @@
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\bin\Debug\AdornerTest.exe.config
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\bin\Debug\AdornerTest.exe
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\bin\Debug\AdornerTest.pdb
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\obj\Debug\AdornerTest.csproj.AssemblyReference.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\obj\Debug\AdornerTest.csproj.SuggestedBindingRedirects.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\obj\Debug\MainWindow.g.cs
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\obj\Debug\App.g.cs
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\obj\Debug\AdornerTest_MarkupCompile.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\obj\Debug\AdornerTest_MarkupCompile.lref
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\obj\Debug\MainWindow.baml
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\obj\Debug\AdornerTest.g.resources
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\obj\Debug\AdornerTest.Properties.Resources.resources
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\obj\Debug\AdornerTest.csproj.GenerateResource.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\obj\Debug\AdornerTest.csproj.CoreCompileInputs.cache
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\obj\Debug\AdornerTest.exe
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\AdornerTest\obj\Debug\AdornerTest.pdb

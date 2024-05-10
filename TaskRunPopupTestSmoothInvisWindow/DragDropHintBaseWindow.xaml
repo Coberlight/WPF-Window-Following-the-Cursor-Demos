@@ -1,0 +1,45 @@
+﻿<Window x:Class="GiveFeedbackTest.DragDropHintBaseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GiveFeedbackTest"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Title="DragDropHintBaseWindow" Height="450" Width="800"
+        Background="#77FFFFFF"
+        Visibility="Hidden"
+        >
+    <Window.Resources>
+        <Style x:Key="PopupStyle1" TargetType="Popup">
+            <Setter Property="AllowsTransparency" Value="True"/>
+            <Setter Property="Placement" Value="Center"/>
+            <Setter Property="SnapsToDevicePixels" Value="False"/>
+            <Setter Property="UseLayoutRounding" Value="True"/>
+            <Setter Property="PopupAnimation" Value="Fade"/>
+            <Setter Property="Opacity" Value="1"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <!--{Binding ElementName=PopupStackPanel, Path=ActualWidth} - этот вариант не работает, потому что ширина StackPanel автоматически подстраивается под внешний контейнер. Его ширина 0, значит ширина StackPanel тоже 0-->
+        <Popup Name="myPopup2" MinWidth="40" 
+               Width="{Binding ElementName=PopupStackPanel, Path=MaxWidth}" 
+               Style="{StaticResource PopupStyle1}" 
+               IsHitTestVisible="False"  
+               AllowsTransparency="True"
+               Placement="AbsolutePoint">
+            <!--<Border BorderThickness="1">
+                <TextBlock Name="myPopupText" Background="LightBlue" Foreground="Blue" Padding="30">
+                Popup Text
+                </TextBlock>
+            </Border>-->
+            <StackPanel x:Name="PopupStackPanel" MaxWidth="160" IsHitTestVisible="False" >
+                <Image Name="myPopupImage" MaxHeight="100" IsHitTestVisible="False" ></Image>
+                <TextBlock Name="myPopupText" Background="Transparent" TextAlignment="Center" TextWrapping="Wrap" Foreground="Blue" Padding="10,0,10,0" IsHitTestVisible="False" >
+                        Popup Text
+                </TextBlock>
+            </StackPanel>
+        </Popup>
+    </Grid>
+</Window>
