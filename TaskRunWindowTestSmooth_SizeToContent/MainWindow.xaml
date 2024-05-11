@@ -1,0 +1,55 @@
+﻿<Window x:Class="GiveFeedbackTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GiveFeedbackTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing"
+        >
+    <Window.Resources>
+    </Window.Resources>
+
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="TextBox_DroppableElementName" Text="D:\MainData\Images\memes\0fps.png" FontSize="20"/>
+            <TextBlock Text="Drag and drop source MAZAFAKA" Background="DarkBlue" Foreground="White" 
+                       Height="100" FontSize="40"
+                       MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" MouseMove="TextBlock_MouseMove"
+                       TextAlignment="Center"
+                       />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel>
+                    <TextBox x:Name="TextBox_file1" Text="D:\MainData\Desktop\Fruity Reeverb 2.png" FontSize="20"/>
+                    <Button x:Name="LoadSource1" Height="30" Click="LoadSource1_Click">Load source 1</Button>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <TextBox x:Name="TextBox_file2" Text="D:\MainData\Images\memes\0fps.png" FontSize="20"/>
+                    <Button x:Name="LoadSource2" Height="30" Click="LoadSource2_Click">Load source 2</Button>
+                </StackPanel>
+                <StackPanel Grid.Column="2">
+                    <TextBox x:Name="TextBox_file3" Text="D:\MainData\Desktop\Pattern 1_2.fsc" FontSize="20"/>
+                    <Button x:Name="LoadSource3" Height="30" Click="LoadSource3_Click">Load source 3</Button>
+                </StackPanel>
+                <Button Grid.Column="3" Click="Button_Click">General Exit</Button>
+            </Grid>
+            <WrapPanel Orientation="Horizontal">
+                <CheckBox x:Name="CheckBox_Direction" Content="? Top Label: Bottom Label" Padding="4" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="CheckBox_AnimationMode" IsChecked="True" Content="? Simple animation : Smooth animation" Padding="4" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="CheckBox_PictureEnabled" IsChecked="True" Content="Enable Picture" Padding="4" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="CheckBox_LabelEnabled" IsChecked="True" Content="Enable Label" Padding="4" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="CheckBox_HideLabelIfPictureFound" Content="Hide Label If Picture Found" Padding="4" VerticalContentAlignment="Center"/>
+                <Label Content="BgColor:"/>
+                <TextBox x:Name="TextBox_BgColor" Width="100" Text=""></TextBox>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>

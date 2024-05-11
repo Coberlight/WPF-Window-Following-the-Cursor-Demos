@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdornerTest2", "AdornerTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdornerTest3", "AdornerTest3\AdornerTest3.csproj", "{15A1BB6E-E33D-4EBD-B2FF-473762862885}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskRunWindowTestSmooth_SizeToContent", "TaskRunWindowTestSmooth_SizeToContent\TaskRunWindowTestSmooth_SizeToContent.csproj", "{A6A7B3C8-2130-4C43-8116-2BBB355744AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{15A1BB6E-E33D-4EBD-B2FF-473762862885}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15A1BB6E-E33D-4EBD-B2FF-473762862885}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15A1BB6E-E33D-4EBD-B2FF-473762862885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A7B3C8-2130-4C43-8116-2BBB355744AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A7B3C8-2130-4C43-8116-2BBB355744AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A7B3C8-2130-4C43-8116-2BBB355744AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A7B3C8-2130-4C43-8116-2BBB355744AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
