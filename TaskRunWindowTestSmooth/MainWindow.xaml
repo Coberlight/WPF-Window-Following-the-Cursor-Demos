@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         Loaded="Window_Loaded"
+        Closing="Window_Closing"
         >
     <Window.Resources>
     </Window.Resources>
@@ -14,9 +15,10 @@
     <Grid>
         <StackPanel>
             <TextBox x:Name="TextBox_DroppableElementName" Text="D:\MainData\Images\memes\0fps.png" FontSize="20"/>
-            <TextBlock Text="Drag and drop source" Background="DarkBlue" Foreground="White" Height="40" GiveFeedback="TextBlock_GiveFeedback" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" MouseMove="TextBlock_MouseMove"/>
+            <TextBlock Text="Drag and drop source" Background="DarkBlue" Foreground="White" Height="40" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" MouseMove="TextBlock_MouseMove"/>
             <Grid>
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
@@ -33,7 +35,14 @@
                     <TextBox x:Name="TextBox_file3" Text="D:\MainData\Desktop\Pattern 1_2.fsc" FontSize="20"/>
                     <Button x:Name="LoadSource3" Height="30" Click="LoadSource3_Click">Load source 3</Button>
                 </StackPanel>
+                <Button Grid.Column="3" Click="Button_Click">General Exit</Button>
             </Grid>
+            <StackPanel Orientation="Horizontal">
+                <CheckBox x:Name="CheckBox_Direction" Content="? Top Label: Bottom Label" Padding="4" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="CheckBox_AnimationMode" Content="? Simple animation : Smooth animation" Padding="4" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="CheckBox_PictureEnabled" Content="Enable Picture" Padding="4" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="CheckBox_LabelEnabled" Content="Enable Label" Padding="4" VerticalContentAlignment="Center"/>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>

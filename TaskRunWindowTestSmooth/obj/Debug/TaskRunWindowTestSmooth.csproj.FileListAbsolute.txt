@@ -3,12 +3,10 @@ D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowT
 D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\bin\Debug\GiveFeedbackTest.pdb
 D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\TaskRunWindowTestSmooth.csproj.AssemblyReference.cache
 D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\TaskRunWindowTestSmooth.csproj.SuggestedBindingRedirects.cache
-D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\DragDropHintBaseWindow.g.cs
 D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\MainWindow.g.cs
 D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\App.g.cs
 D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\GiveFeedbackTest_MarkupCompile.cache
 D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\GiveFeedbackTest_MarkupCompile.lref
-D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\DragDropHintBaseWindow.baml
 D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\MainWindow.baml
 D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\GiveFeedbackTest.g.resources
 D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\GiveFeedbackTest.Properties.Resources.resources
@@ -16,3 +14,5 @@ D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowT
 D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\TaskRunWindowTestSmooth.csproj.CoreCompileInputs.cache
 D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\GiveFeedbackTest.exe
 D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\GiveFeedbackTest.pdb
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\DragDropHintWindow.g.cs
+D:\BicycleFactory\Visual Studio (dotNET)\WPF - Moving Window Demo\TaskRunWindowTestSmooth\obj\Debug\DragDropHintWindow.baml

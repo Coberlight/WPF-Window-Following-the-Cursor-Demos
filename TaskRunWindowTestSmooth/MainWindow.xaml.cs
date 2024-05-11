@@ -19,6 +19,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Interop;
 using System.Windows.Controls.Primitives;
 using System.Xml.Linq;
+using static GiveFeedbackTest.DragDropHintWindow;
 //using Windows.Foundation;
 
 namespace GiveFeedbackTest
@@ -29,12 +30,11 @@ namespace GiveFeedbackTest
     public partial class MainWindow : Window
     {
         volatile bool isMoving = false;
-        public DragDropHintBaseWindow dragDropper;
+        public DragDropHintWindow dragDropper;
         public MainWindow()
         {
             InitializeComponent();
-            dragDropper = new DragDropHintBaseWindow();
-            GiveFeedback += OnGiveFeedback;
+            dragDropper = new DragDropHintWindow();
         }
 
         private void TextBlock_GiveFeedback(object sender, GiveFeedbackEventArgs e)
@@ -53,7 +53,20 @@ namespace GiveFeedbackTest
             // Без проверки начинается резкое мерцание окна с постоянным возникновением и отменой событий Drag and drop.
             if (Mouse.LeftButton == MouseButtonState.Pressed && Mouse.RightButton == MouseButtonState.Released) 
             {
-                dragDropper.ProcessCopyDragDrop(TextBox_DroppableElementName.Text.Trim('\"'), true, true, new HintSmoothAnimation());
+                IHintAnimation ha;
+                if ((bool)CheckBox_AnimationMode.IsChecked)
+                    ha = new HintSmoothAnimation();
+                else ha = new HintSimpleAnimation();
+
+                string fileName = TextBox_DroppableElementName.Text.Trim('\"');
+
+                dragDropper.ProcessCopyDragDrop(
+                    fileName,
+                    System.IO.Path.GetFileNameWithoutExtension(fileName),
+                    (bool)CheckBox_LabelEnabled.IsChecked,
+                    (bool)CheckBox_PictureEnabled.IsChecked,
+                    ha,
+                    (bool)CheckBox_Direction.IsChecked ? HintTextLocation.Top : HintTextLocation.Bottom);
             }
         }
         [DllImport("user32.dll")]
@@ -61,11 +74,6 @@ namespace GiveFeedbackTest
 
         [DllImport("user32.dll")]
         private static extern int GetWindowLong(IntPtr hWnd, int nIndex);
-
-        private void OnGiveFeedback(object sender, GiveFeedbackEventArgs e)
-        {
-            
-        }
 
         private void LoadSource1_Click(object sender, RoutedEventArgs e)
         {
@@ -85,6 +93,16 @@ namespace GiveFeedbackTest
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            System.Environment.Exit(0);
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            //dragDropper.Close();
         }
     }
 }

@@ -58,14 +58,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="CursorHelper.cs" />
-    <Compile Include="DragDropHintBaseWindow.xaml.cs">
-      <DependentUpon>DragDropHintBaseWindow.xaml</DependentUpon>
+    <Compile Include="DragDropHintWindow.xaml.cs">
+      <DependentUpon>DragDropHintWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="HintAnimations\HintSimpleAnimation.cs" />
     <Compile Include="HintAnimations\IHintAnimation.cs" />
     <Compile Include="ScreenData.cs" />
     <Compile Include="WindowsServices.cs" />
-    <Page Include="DragDropHintBaseWindow.xaml">
+    <Page Include="DragDropHintWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

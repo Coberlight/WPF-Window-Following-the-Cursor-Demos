@@ -6,17 +6,21 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Documents;
 
-namespace GiveFeedbackTest.HintAnimations
+namespace GiveFeedbackTest
 {
     internal class HintSimpleAnimation : IHintAnimation
     {
+        double shiftX;
+        double shiftY;
         public void Init(double x, double y, double shiftX, double shiftY)
         {
-            //throw new NotSupportedException("Нечего инициализировать в простой анимации");
+            this.shiftX = shiftX;
+            this.shiftY = shiftY;
         }
         public Point GetAnimationFrame(Point point)
         {
-            return point;
+            Point p = new Point(point.X + shiftX, point.Y + shiftY);
+            return p;
         }
         public void SetSpeed(double speed)
         {
